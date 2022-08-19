@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Glass Antiqua', cursive;
+
+}
+
+.gridBody{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header"
+    "main"
+    "footer"; 
+}
+
+body{
+    background-image: url('../fotos/huellas.png');
+    z-index: 0;
+}
+
+/* header */
+.gridHeader{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo"
+                        "nav";
+}
+
+
+header{
+    grid-area: header;
+
+}
+
+#logo{
+    grid-area: logo;
+    padding: 50px;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+
+
+nav{
+    grid-area: nav;
+    background-color: #507445;
+    /* clip-path: polygon(0 0,
+    100% 0,
+    100% 100%,
+    0 69%);  */
+    align-self: end;
+    justify-content: center;
+
+} 
+
+
+.navList{
+display: flex;
+    flex-direction: row;
+    justify-items: end;
+    justify-content: space-around;
+    list-style-type: none;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.navList li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+} 
+
+.navList li a:hover{
+    color: #ffde59;
+}
+
+main{
+    grid-area: main;
+    position: relative;
+    height: auto;
+
+}
+
+.carousel-inner{
+    display: flex;
+    padding-left: 400px;
+    padding-bottom: 50px;
+}
+
+#carouselExampleDark{
+    padding-top: 50px;
+}
+
+.Title-plan-es{
+    padding-top: 60px;
+    padding-left: 60px;
+    position: absolute;
+    font-size: xx-large;
+}
+
+.Title-plan-ag{
+    padding-top: 60px;
+    padding-left: 80px;
+    position: absolute;
+    font-size: xx-large;
+}
+
+.Title-plan-az{
+    padding-top: 60px;
+    padding-left: 60px;
+    position: absolute;
+    font-size: xx-large;
+    color: white;
+}
+
+.imagenIndex{
+    height: 500px;
+    background-image: url('../fotos/perro_.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.tituloUno{
+color:black;
+text-align: center;
+text-decoration: overline;
+font-size: 50px;
+padding-top: 4em;
+font-weight: lighter;
+
+}
+
+.tituloDos{
+    font-size: 50px;
+    color:black;
+    text-align: center;
+text-decoration: underline;
+letter-spacing: 20px;
+font-weight: lighter;
+
+}
+
+/*section*/
+
+section{
+    grid-area: main;
+    position: relative;
+    height: 800px;
+}
+
+.imagenAndText{
+    grid-area: main;
+
+}
+
+.sectionImg{
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.divSection{
+    display: flex;
+    flex-direction: row;
+    justify-items: end;
+    justify-content: space-around;
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+/*footer*/
+
+footer{
+    grid-area: footer;
+    background-color: #ffde59;
+    height: 100px;
+}
+
+.gridFooter{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo"
+                        "nav";
+}
+
+.footer{
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0 50px;
+}
+
+.social{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
